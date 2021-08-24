@@ -11,6 +11,12 @@ router.put('/updateTransaksi/:id', (req, res) => {
   .catch(err => res.json(err))
 })
 
+router.get('/getAll', (req, res) => {
+  orderController.getAll()
+  .then(result => res.json(result))
+  .catch(err =>  res.json(err))
+})
+
 router.get('/getData/:id', (req, res) => {
   orderController.getData(req.params.id)
   .then(result => res.json(result))

@@ -15,6 +15,9 @@ const OrderSchema = new Schema ({
   jumlah: {
     type: String
   },
+  total: {
+    type: Number
+  },
   status: {
     // 1: Belum verif, 2: Sudah OK, 3: Barang Packing
     type: Number,
